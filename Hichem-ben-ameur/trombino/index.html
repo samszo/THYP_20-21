@@ -104,7 +104,7 @@
         
         <div class="row">
             <div class="col-3" style="text-align: center;">
-                <div class="jumbotron">
+                <div class="jumbotron" style=" overflow: auto;max-height:600px ;">
                     <h4>Promotion  2020 - 2021</h4>
                     <hr class="my-4">
                         <h6 style="float:left">Recherche par nom:</h6>
@@ -142,7 +142,8 @@
                   
                   </div>
             </div>
-            <div class="col-9">
+            <div class="col-9"  style=" overflow: auto;max-height:600px ;">
+            
                 <div class="d-flex justify-content-center" >
                     <div class="spinner-border" role="status" id="spinner2">
                       <span class="sr-only">Loading...</span>
@@ -356,6 +357,8 @@ var dataPhoto, dataForm, dataFacet=[], dataDoublons={}
                 .html(function(d, i) { return html.replace(/__/gi, "_"+i+"_");});	  			
             cards.append('div').attr('class','card-footer')
                 .append('small').attr('class','text-muted')
+                .append('a').attr('href', 'mailto:' )
+                
                 .text(function(d, i) {
                         //charge le graph des réponses
                         var size = 100;
