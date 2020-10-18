@@ -8,7 +8,7 @@ Pour télécharger le projet il faut utiliser la commande suivante :
 # Technologies utilisées
 
 ## Bootstrap 
-<img src="Bootstrap.jpg"></img>
+<img src="Bootstrap.JPG"></img>
 
  * version Bootstrap v4.1.3(https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -19,7 +19,7 @@ Pour télécharger le projet il faut utiliser la commande suivante :
 La v4.1.3 du Bootstrap permet le Déplacement de la configuration de la liste des navigateurs de notre package.json vers un fichier séparé pour éviter les paramètres de navigateur hérités involontairement dans les projets npm. Aussi les plugins de Bootstrap peuvent désormais être importés séparément dans tous les contextes, car ils sont désormais prêts pour UMD.
 
 ## Data Driven Documents 
-<img src="d3.png"></img>
+<img src="d3.PNG"></img>
 
 «D3» signifie Data-Driven Documents. Les données font référence à l'élément que vous souhaitez visualiser et le document fait référence à sa représentation visuelle. C'est ce qu'on appelle un «document» car D3 est basé sur le modèle standard des pages Web: le Document Object Model (DOM) .
 
