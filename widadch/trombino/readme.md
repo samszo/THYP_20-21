@@ -3,12 +3,13 @@ L'idée de ce  projet consite à la réalisation d’une interface pour un Tromb
 
 # Installation
 Pour télécharger le projet il faut utiliser la commande suivante :
+
 <code>git clone https://github.com/samszo/THYP_20-21.git</code>
 
 # Technologies utilisées
 
 ## Bootstrap 
-<img src="Bootstrap.JPG"></img>
+<img src="Bootstrap.jpg"></img>
 
  * version Bootstrap v4.1.3(https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -19,7 +20,7 @@ Pour télécharger le projet il faut utiliser la commande suivante :
 La v4.1.3 du Bootstrap permet le Déplacement de la configuration de la liste des navigateurs de notre package.json vers un fichier séparé pour éviter les paramètres de navigateur hérités involontairement dans les projets npm. Aussi les plugins de Bootstrap peuvent désormais être importés séparément dans tous les contextes, car ils sont désormais prêts pour UMD.
 
 ## Data Driven Documents 
-<img src="d3.PNG"></img>
+<img src="d3.png"></img>
 
 «D3» signifie Data-Driven Documents. Les données font référence à l'élément que vous souhaitez visualiser et le document fait référence à sa représentation visuelle. C'est ce qu'on appelle un «document» car D3 est basé sur le modèle standard des pages Web: le Document Object Model (DOM) .
 
@@ -30,4 +31,4 @@ D3 n'est pas un cadre de visualisation traditionnel. Plutôt que d'introduire un
 ### Installation
 Dans une page HTML (ou pour une version spécifique, essayez: <https://cdnjs.com/libraries/d3> )
 
-   < script  src = "//d3js.org/d3.v3.min.js"  charset = "utf-8" > < / script >
+  <code> < script  src = "//d3js.org/d3.v3.min.js"  charset = "utf-8" > < / script > <code>
