@@ -12,7 +12,7 @@ google forms et d'afficher certaines de leurs informations.
  * Script : Javascript
  * Design : Bootstrap
 
-# Avenir de l'application 
+# Améliorations 
  * Utilisation de l'API Papa Parse
  * Mettre en place un systeme de filtres __complet__
  * Afficher dans une fenêtre contextuelle toutes les informations relatives à un étudiant
