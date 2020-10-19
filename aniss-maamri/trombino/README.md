@@ -16,3 +16,4 @@ google forms et d'afficher certaines de leurs informations.
  * Utilisation de l'API Papa Parse
  * Mettre en place un systeme de filtres __complet__
  * Afficher dans une fenêtre contextuelle toutes les informations relatives à un étudiant
+ * Possibilité d'acceder au github d'un étudiant
