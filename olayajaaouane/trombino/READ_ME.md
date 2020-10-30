@@ -29,7 +29,3 @@ D3.js est une bibliothèque JavaScript pour manipuler des documents basés sur d
 D3 vous permet de lier des données arbitraires à un modèle d'objet de document (DOM), puis d'appliquer des transformations basées sur les données au document. Par exemple, vous pouvez utiliser D3 pour générer un tableau HTML à partir d'un tableau de nombres. Ou utilisez les mêmes données pour créer un graphique à barres SVG interactif avec des transitions et une interaction fluides.
 
 D3 n'est pas un cadre monolithique qui cherche à fournir toutes les fonctionnalités imaginables. Au lieu de cela, D3 résout le nœud du problème: une manipulation efficace des documents à partir de données. Cela évite la représentation propriétaire et offre une flexibilité extraordinaire, exposant toutes les capacités des normes Web telles que HTML, SVG et CSS. Avec une surcharge minimale, D3 est extrêmement rapide, prenant en charge de grands ensembles de données et des comportements dynamiques pour l'interaction et l'animation. Le style fonctionnel de D3 permet la réutilisation du code à travers une collection diversifiée de modules officiels et développés par la communauté .
-### La base de données utilisée
-les données sont récupérées à partir du formulaire dans un fichier .csv en ligne ou téléchargeable du URL suivant:
-(https://docs.google.com/spreadsheets/d/e/2PACX-1vQHni5Lu--I9WKTWGHOJ3_SBRW47sPTvxxRN6FOaGchhMztr4gm3I5C91EJq1CcGOsmfsOfa2f7PfrF/pub?gid=11903047&single=true&output=csv)
-
