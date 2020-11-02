@@ -6,6 +6,8 @@
 @prefix o: <http://omeka.org/s/vocabs/o#> .
 @prefix fup8: <https://jardindesconnaissances.univ-paris8.fr/onto/fup8#> .
 @prefix teach: <http://linkedscience.org/teach/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
 
 <https://jardindesconnaissances.univ-paris8.fr/onto/fup8> a owl:Ontology ;
     dcterms:title "Formation Université Paris 8" .
@@ -14,6 +16,11 @@ fup8:Mention a rdfs:Class ;
     rdfs:label "Mention" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
+
+fup8:SallCours a rdfs:Class ;
+    rdfs:label "Salle de cours" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .    
 
 fup8:Parcours a rdfs:Class ;
     rdfs:label "Parcours" ;
@@ -29,6 +36,12 @@ fup8:EC a rdfs:Class ;
     rdfs:label "Élément constitutif" ;
     rdfs:domain o:Resource ;
     owl:sameAs schema:Course ;    
+    vs:term_status "experimental" .
+
+fup8:Etudiant a rdfs:Class ;
+    rdfs:label "Etudiant" ;
+    rdfs:domain o:Resource ;
+    owl:sameAs foaf:Person ;    
     vs:term_status "experimental" .
 
 fup8:Intervention a rdfs:Class ;
@@ -117,6 +130,12 @@ fup8:nbg a rdf:Property ;
 fup8:hasIntervenant a rdf:Property ;
     rdfs:label "hasIntervenant" ;
     rdfs:comment "L'intervenant enseignant l'EC" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy fup8: .
+
+fup8:hasEtudiant a rdf:Property ;
+    rdfs:label "hasEtudiant" ;
+    rdfs:comment "A comme étudiant" ;
     rdfs:domain o:Resource ;
     rdfs:isDefinedBy fup8: .
 
