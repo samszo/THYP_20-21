@@ -2,6 +2,7 @@ class adln {
     constructor(params) {
         var me = this;
         this.cont = params.cont ? params.cont : d3.select('body');
+        this.apiUrls = params.apiUrls ? params.apiUrls : false;
         this.apiUrl = params.apiUrl ? params.apiUrl : false;
         this.waitUrl = params.waitUrl ? params.waitUrl : false;
         this.data = params.data ? params.data : {}; 
@@ -25,7 +26,9 @@ class adln {
             verifInit();    
             d3.json(me.apiUrl+"vocabularies").then(function(vocabs) {
                 let contSlct = d3.select("#"+idCont);
-                contSlct.append('label').attr('for','slctVocabs').html('Choisir un vocabulaire :');
+                contSlct.select('#slctVocabs').remove();
+                contSlct.select('#slctVocabsLbl').remove();
+                contSlct.append('label').attr('id','slctVocabsLbl').attr('for','slctVocabs').html('Choisir un vocabulaire :');
                 let slct = contSlct.append('select')
                     .attr('id','slctVocabs')
                     .attr('name','vocabs')                    
@@ -40,6 +43,26 @@ class adln {
                     .html(d=>d['o:label']);
             });
         }
+
+        this.getListeApi = function(idCont, fctEnd){
+            let contSlct = d3.select("#"+idCont);
+            contSlct.append('label').attr('for','slctApi').html('Choisir une api :');
+            let slct = contSlct.append('select')
+                .attr('id','slctApi')
+                .attr('name','apis')                    
+                .on('change',function(d){
+                    let url = this.options[this.selectedIndex].id;
+                    me.apiUrl = url;
+                    if(fctEnd)fctEnd(idCont,me.showData);
+                });
+            slct.selectAll('option').data(me.apiUrls).enter().append('option')
+                .attr('id',d=>{
+                    return d.url;
+                })
+                .html(d=>d.titre);
+        }
+
+        
 
           
         this.getItems = function (idVocab) {
@@ -66,6 +89,8 @@ class adln {
 
         this.init = function (idVocab) {
             me.showWait();
+
+
 
             verifInit();            
             
