@@ -267,8 +267,8 @@ class adln {
         }
 
         //création du svg d'attente
+        divWait = this.cont.append("div").attr('id','adln-svg-wait').style('display','none');
         if(this.waitUrl){
-            divWait = this.cont.append("div").attr('id','adln-svg-wait').style('display','none');
             chargeSVG(this.waitUrl,'adln-svg-wait');    
         }
     }
