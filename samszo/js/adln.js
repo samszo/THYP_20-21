@@ -53,6 +53,8 @@ class adln {
                 .on('change',function(d){
                     let url = this.options[this.selectedIndex].id;
                     me.apiUrl = url;
+                    me.cont.select('h1').remove();
+                    me.cont.selectAll('table').remove();        
                     if(fctEnd)fctEnd(idCont,me.showData);
                 });
             slct.selectAll('option').data(me.apiUrls).enter().append('option')
